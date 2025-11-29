@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Organizer Dashboard</div>
+    <nav>
+        <a href="login.html">Home</a>
+        <a href="organizer.html" class="active">Dashboard</a>
+        <a href="#">Logout</a>
+    </nav>
+</header>
+
+<section class="dashboard">
+    <h2>Welcome, Organizer</h2>
+    <p>Manage the events, attendance, and participants here.</p>
+
+    <div class="dashboard-container">
+
+        <div class="dash-card">
+            <h3>📅 Events</h3>
+            <p>Create, Update, Delete any event easily.</p>
+            <a href="#event-section"><button>Manage Events</button></a>
+        </div>
+
+        <div class="dash-card">
+            <h3>🧾 Attendance</h3>
+            <p>Track attendance through QR or manually.</p>
+            <a href="#attendance-section"><button>Track Attendance</button></a>
+        </div>
+
+        <div class="dash-card">
+            <h3>👥 Participants</h3>
+            <p>View list of registered students for any event.</p>
+            <button>View Participants</button>
+        </div>
+
+    </div>
+</section>
+<section id="attendance-section" class="attendance-panel">
+    <h2>Attendance Tracking</h2>
+    <p>Scan QR or Mark manually</p>
+
+    <div class="attendance-container">
+        <div class="att-card">
+            <h3>📷 QR Scan Attendance</h3>
+            <p>Scan student QR to mark attendance automatically.</p>
+            <button>Start QR Scanner</button>
+        </div>
+
+        <div class="att-card">
+            <h3>🖊 Manual Attendance</h3>
+            <p>Select event & mark attendance manually.</p>
+            <button>Mark Attendance</button>
+        </div>
+    </div>
+</section>
+<section id="event-section" class="event-crud">
+    <h2>Event Management</h2>
+
+    <form class="event-form">
+        <input type="text" placeholder="Event Title" required>
+        <input type="date" required>
+        <input type="text" placeholder="Venue" required>
+        <textarea placeholder="Event Description"></textarea>
+        <button type="submit">Add Event</button>
+    </form>
+
+    <h3>Existing Events</h3>
+    <table>
+        <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Venue</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <tr>
+            <td>Technical Fest</td>
+            <td>2025-01-15</td>
+            <td>Main Hall</td>
+            <td><button class="edit-btn">Edit</button></td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>

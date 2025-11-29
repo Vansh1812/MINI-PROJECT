@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All College Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <div class="logo">College Events</div>
+  <nav class="top-nav">
+    <a href="login.html">Home</a>
+    <a href="events.html" class="active">Explore Events</a>
+    <a href="organizer.html">Organizer Panel</a>
+  </nav>
+</header>
+
+<main class="events-page">
+
+  <!-- Quick jump anchors -->
+  <div class="events-topbar">
+    <!-- <a href="#techskill" class="jump">Technical & Skill</a>
+    <a href="#cultural" class="jump">Cultural Fest</a>
+    <a href="#sports" class="jump">Sports Management</a> -->
+  </div>
+
+  <!-- Technical & Skill Events -->
+  <section id="techskill" class="events-section">
+    <div class="section-header">
+      <h2>Technical & Skill Events</h2>
+      <button class="toggle-btn" data-target="techskill-cards"></button>
+    </div>
+
+    <div id="techskill-cards" class="event-cards">
+      <!-- Tech Fest -->
+      <div class="event-card" data-category="techskill">
+        <img src="abes tech.png" alt="Tech Fest">
+        <h3>Tech Fest 2025</h3>
+        <p>Hackathon, Coding Races, Robotics & AI workshops — level up your skills.</p>
+        <a href="events-tech.html" class="btn">View Details</a>
+        <button class="register-cta">Register Now</button>
+      </div>
+
+      <!-- MTG 2.0 -->
+      <div class="event-card" data-category="techskill">
+        <img src="mtg.jpeg" alt="MTG 2.0">
+        <h3>MTG 2.0</h3>
+        <p>Management + Technical growth meetup: talks, panels & hands-on workshops.</p>
+        <a href="event-mtg.html" class="btn">View Details</a>
+        <button class="register-cta">Register Now</button>
+      </div>
+    </div>
+    <section id="techskill" class="events-section">
+   <div id="techskill-cards" class="event-cards">
+<!-- UNFRAMED Event - GeeksforGeeks -->
+<div class="event-card" data-category="techskill">
+    <img src="gfg.jpeg" alt="UNFRAMED Event"> 
+    <h3>UNFRAMED — Escape Challenge</h3>
+    <p>
+      Prison escape–themed challenge combining strategy, problem-solving, and technical intellect. 
+      Organized by GeeksforGeeks Student Chapter ABESEC.
+    </p>
+    <a href="unframed.html" class="btn">View Details</a>
+    <button class="register-cta" onclick="window.location.href='https://bit.ly/gfg-unframed'">
+      Register Now
+    </button>
+</div>
+
+  </section>
+
+  <!-- Cultural Fest -->
+  <section id="cultural" class="events-section">
+    <div class="section-header">
+      <h2>Cultural Fest</h2>
+      <button class="toggle-btn" data-target="cultural-cards"></button>
+    </div>
+
+    <div id="cultural-cards" class="event-cards">
+      <div class="event-card" data-category="cultural">
+        <img src="genero.jpeg" alt="Cultural Fest">
+        <h3>Cultural Fest</h3>
+        <p>Music, Dance, Drama, Fashion shows and more — celebrate creativity.</p>
+        <a href="event-cultural.html" class="btn">View Details</a>
+        <button class="register-cta">Register Now</button>
+      </div>
+      <!-- add more cultural cards here -->
+    </div>
+  </section>
+
+  <!-- Sports Management -->
+  <section id="sports" class="events-section">
+    <div class="section-header">
+      <h2>Sports Management</h2>
+      <button class="toggle-btn" data-target="sports-cards"></button>
+    </div>
+
+    <div id="sports-cards" class="event-cards">
+      <div class="event-card" data-category="sports">
+        <img src="abes sports fest.jpeg" alt="Annual Sports Meet">
+        <h3>Annual Sports Meet</h3>
+        <p>Cricket, Football, Athletics, Kabaddi — show your athletic spirit.</p>
+        <a href="event-sports.html" class="btn">View Details</a>
+        <button class="register-cta">Register Now</button>
+      </div>
+      <!-- add more sports cards here -->
+    </div>
+  </section>
+
+</main
